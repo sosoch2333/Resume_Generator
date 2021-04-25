@@ -22,6 +22,7 @@ public class domUtil {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             DOCUMENT = builder.newDocument();
+            DOCUMENT.setXmlStandalone(true);
         }catch (Exception e){
             e.printStackTrace();
         }

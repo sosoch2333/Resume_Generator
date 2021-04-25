@@ -1,0 +1,94 @@
+resume{
+	display:block;
+	border-style: double;
+	border-width:thin;
+	width: 1000px;
+    height: 1000px;
+	margin:20px;
+}
+basic_information{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+name,sex,birth,nativeAdd,address,tel,relativeTel{
+	display:block;
+	width: 1000px;
+    height: 30px;
+	padding-left: 80px;
+	text-decoration:underline;
+}
+name{
+	font-weight: bold;
+	font-size: 30px;
+	padding: 25px;
+	text-align: center;
+}
+tel{
+	font-weight: bold;
+	margin:10px;
+}
+
+family_infomation{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+memberName,relation{
+	display:block;
+	width: 1000px;
+    height: 30px;
+	padding-left: 80px;
+}
+memberName{
+	margin:10px;
+}
+
+study_information{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+
+period,school,degree{
+	display:block;
+	width: 500px;
+    height: 30px;
+	padding-left: 80px;
+}
+school{
+	font-weight: bold;
+	margin:10px;
+}
+
+
+work_information{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+
+workPeriod,company,desc{
+	display:block;
+	width: 1000px;
+    height: 30px;
+	padding-left: 80px;
+}
+company{
+	font-weight: bold;
+	margin:10px;
+}
+
+hobby{
+	display:block;
+	padding-left: 80px;
+	margin:10px;
+	text-decoration:underline;
+}
+
+
+

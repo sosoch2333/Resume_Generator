@@ -39,6 +39,8 @@ public class ResumeController {
 
     @RequestMapping("/addInfo")
     public String addInfo(BasicInfo basicInfo,String image){
+        if(basicInfo.getSex().equals("0")) basicInfo.setSex("男");
+        else basicInfo.setSex("女");
         this.basicInfo=basicInfo;
         this.image=image;
         return "addFamilyInfo";

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>添加向导-工作经历</title>
+    <!-- CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container">
+    <main>
+        <div class="py-5 text-left">
+            <h2>添加向导</h2>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">录入工作经历</h4>
+                <form action="/addWorkInfo">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="workPeriod" class="form-label">时间段</label>
+                            <input type="text" class="form-control" id="workPeriod" name="workPeriod">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="company" class="form-label">公司名称</label>
+                            <input type="text" class="form-control" id="company" name="company">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="desc" class="form-label">工作内容描述</label>
+                            <input type="text" class="form-control" id="desc" name="desc">
+                        </div>
+                    </div>
+
+                    <hr class="my-lg-4">
+                    <div class="col-sm-6">
+                        <button class="btn btn-success" type="submit">下一步>></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2021 Adam Chu</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+<div class="py-5 text-center">
+    <p th:text="亲爱的+${name}" th:if="${not #strings.isEmpty(name)}" align="center"></p>
+</div>
+<div class="py-5 text-center">
+    <h2 style="color:#0fad00" align="center">生成成功！</h2>
+    <p style="color:#5C5C5C;" align="center">感谢您的使用</p>
+</div>
+</body>
+</html>

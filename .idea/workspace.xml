@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ca019f4-e794-4158-b32b-fffec6e2c0c9" name="Default Changelist" comment="" />
+    <list default="true" id="7ca019f4-e794-4158-b32b-fffec6e2c0c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resume.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/resume.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/whut/resume/controller/ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/whut/resume/controller/ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/whut/resume/service/serviceImpl/ResumeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/whut/resume/service/serviceImpl/ResumeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/whut/resume/util/domUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/whut/resume/util/domUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addBasicInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addBasicInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/resume_generator.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/whut/resume/controller/ResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/whut/resume/controller/ResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/whut/resume/service/serviceImpl/ResumeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/whut/resume/service/serviceImpl/ResumeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/whut/resume/util/domUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/whut/resume/util/domUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/addBasicInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addBasicInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +47,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -46,7 +65,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1rdlGeahUvaTxrlIJQGYRApIYlL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -55,7 +78,8 @@
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../employeeManagement" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -63,17 +87,19 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\AC\学习笔记\4.25-4.30\resume_generator\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.whut.resume" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AC\学习笔记\4.25-4.30\Resume_Generator\src\main\resources\static\resume" />
       <recent name="D:\AC\学习笔记\4.25-4.30\resume_generator\src\main\resources\template" />
       <recent name="D:\AC\学习笔记\4.25-4.30\resume_generator\src\main\resources\static" />
       <recent name="D:\AC\学习笔记\4.25-4.30\resume_generator\src\main\resources\static\view" />
       <recent name="D:\AC\学习笔记\4.25-4.30\resume_generator\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.whut.resume" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AC\学习笔记\4.25-4.30\Resume_Generator\src\main\resources" />
+      <recent name="D:\AC\学习笔记\4.25-4.30\Resume_Generator\src\main\resources\static" />
       <recent name="D:\AC\学习笔记\4.25-4.30\resume_generator\src\main\resources" />
     </key>
   </component>
@@ -120,26 +146,25 @@
       <option name="presentableId" value="Default" />
       <updated>1619313752557</updated>
       <workItem from="1619313753883" duration="19374000" />
+      <workItem from="1619339564306" duration="5175000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/whut/resume/service/serviceImpl/ResumeServiceImpl.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/whut/resume/controller/ResumeController.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

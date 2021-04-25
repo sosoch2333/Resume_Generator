@@ -29,6 +29,8 @@ public class ResumeController {
     private workInfo workInfo;
     private String hobbies;
 
+    private String image;
+
 
     @RequestMapping("/showAddInfo")
     public String showAddInfo(){
@@ -36,8 +38,9 @@ public class ResumeController {
     }
 
     @RequestMapping("/addInfo")
-    public String addInfo(BasicInfo basicInfo){
+    public String addInfo(BasicInfo basicInfo,String image){
         this.basicInfo=basicInfo;
+        this.image=image;
         return "addFamilyInfo";
     }
 
@@ -70,7 +73,7 @@ public class ResumeController {
     public String addHobby(String hobbies,Model model){
         this.hobbies=hobbies;
         model.addAttribute("name",basicInfo.getName());
-        resumeService.generateXML(basicInfo,familyInfoList,studyInfo,workInfo,hobbies);
+        resumeService.generateXML(basicInfo,familyInfoList,studyInfo,workInfo,this.hobbies);
         return "initSuccess";
     }
 }

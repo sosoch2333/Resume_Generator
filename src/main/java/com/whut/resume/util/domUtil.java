@@ -1,11 +1,12 @@
 package com.whut.resume.util;
-
-import com.whut.resume.pojo.BasicInfo;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 
@@ -36,5 +37,12 @@ public class domUtil {
             root.appendChild(element);
         }
         return root;
+    }
+
+    public static void generateXML(File target) throws TransformerException {
+        TransformerFactory transFactory=TransformerFactory.newInstance();
+        Transformer transformer=transFactory.newTransformer();
+        transformer.setOutputProperty(OutputKeys.INDENT,"yes");
+        transformer.transform(new DOMSource(DOCUMENT),new StreamResult(target));
     }
 }

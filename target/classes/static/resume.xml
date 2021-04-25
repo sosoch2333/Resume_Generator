@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resume>
+<basic_information>
+<name>adam</name>
+<sex>0</sex>
+<birth>2019/1/1</birth>
+<nativeAdd>NX</nativeAdd>
+<address>FYJY</address>
+<tel>156</tel>
+<relativeTel>138</relativeTel>
+</basic_information>
+<family_infomation>
+<member id="0">
+<memberName>Hailey</memberName>
+<relation>M</relation>
+</member>
+</family_infomation>
+<study_information>
+<period>2018-2222</period>
+<school>ddd</school>
+<degree>ddd</degree>
+</study_information>
+<work_information>
+<workPeriod>2021-22</workPeriod>
+<company>aaa</company>
+<desc>aaa</desc>
+</work_information>
+<hobby>AAA</hobby>
+<hobby>BBB</hobby>
+<hobby>CCC</hobby>
+</resume>

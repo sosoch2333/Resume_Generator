@@ -13,5 +13,11 @@ import java.util.List;
  * @date 2021/4/25 12:08
  */
 public interface ResumeService {
-    void generateXML(BasicInfo basicInfo, List<FamilyInfo> familyInfo, studyInfo studyInfo, workInfo workInfo, String hobby);
+    void generateXML(BasicInfo basicInfo, List<FamilyInfo> familyInfo, studyInfo studyInfo, workInfo workInfo, String hobby,String image);
+
+    void updateBasicInformation(BasicInfo newBasicInfo);
+
+    void addInformation(Object object,String tagName);
+
+    void deleteInformation(String tobeDeleted,String tagName);
 }

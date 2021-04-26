@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>修改基本信息</title>
+    <!-- CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<div class="container">
+    <main>
+        <div class="row g-5">
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">修改基本信息</h4>
+                <form action="/updateBasicInfo">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="name" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="name" th:value="${info.name}" name="name">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">性别</label>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="male" name="sex" type="radio" class="form-check-input" value="0">
+                                    <label class="form-check-label" for="male">男</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="female" name="sex" type="radio" class="form-check-input" value="1">
+                                    <label class="form-check-label" for="female">女</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="birth" class="form-label">生日</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="birth" th:value="${info.birth}" name="birth">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="nativeAdd" class="form-label">籍贯</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="nativeAdd" th:value="${info.nativeAdd}" name="nativeAdd">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">家庭住址</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="address" th:value="${info.address}" name="address">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="tel" class="form-label">个人电话</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="tel" th:value="${info.tel}" name="tel">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="relativeTel" class="form-label">联系人电话</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="relativeTel" th:value="${info.relativeTel}" name="relativeTel">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-lg-4"/>
+                    <div class="col-sm-6">
+                        <button class="btn btn-success" type="submit">确认修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2021 Adam Chu</p>
+    </footer>
+</div>
+
+</body>
+</html>

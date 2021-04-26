@@ -1,7 +1,7 @@
 package com.whut.resume.pojo;
 
-/**
- * @author AC <chuhan@133.cn>
+/**学业信息
+ * @author AC
  * @describe
  * @date 2021/4/25 14:23
  */

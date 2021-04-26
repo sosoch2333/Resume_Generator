@@ -1,7 +1,7 @@
 package com.whut.resume.pojo;
 
-/**
- * @author AC <chuhan@133.cn>
+/**基本信息
+ * @author AC
  * @describe
  * @date 2021/4/25 11:52
  */
@@ -22,6 +22,9 @@ public class BasicInfo {
         this.address = address;
         this.tel = tel;
         this.relativeTel = relativeTel;
+    }
+
+    public BasicInfo() {
     }
 
     public String getName() {

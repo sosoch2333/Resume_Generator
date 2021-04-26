@@ -12,6 +12,12 @@ import java.util.Map;
  * @date 2021/4/25 15:32
  */
 public class classUtil {
+    /***
+     * 获取一个类的所有成员变量名和成员变量的值
+     * @param o
+     * @return
+     * @throws IllegalAccessException
+     */
     public static Map<String,String> getAttributesAndValue(Object o) throws IllegalAccessException{
         Map<String,String> result=new HashMap<>();
         for(Field field:o.getClass().getDeclaredFields()){
@@ -25,6 +31,11 @@ public class classUtil {
         return result;
     }
 
+    /***
+     * 获取一个类的所有成员变量名
+     * @param o
+     * @return
+     */
     public static List<String> getFields(Object o){
         List<String> fields=new ArrayList<>();
         for(Field field:o.getClass().getDeclaredFields()){

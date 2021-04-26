@@ -1,0 +1,112 @@
+resume{
+	display:block;
+	border-style: double;
+	border-width:thin;
+	width: 1000px;
+    height: 1500px;
+	margin:20px;
+}
+basic_information{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+sex,birth,nativeAdd,address,tel,relativeTel{
+	display:block;
+	width: 1000px;
+    height: 30px;
+	padding-left: 80px;
+	text-decoration:underline;
+}
+name{
+    display:block;
+    width: 1000px;
+    height: 30px;
+    padding-left: 80px;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 25px;
+	text-align: center;
+}
+tel{
+	font-weight: bold;
+	margin:10px;
+}
+image{
+	display:block;
+	width: 200px;
+    height: 200px;
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+
+family_infomation{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+memberName,relation{
+	display:block;
+	width: 1000px;
+    height: 30px;
+	padding-left: 80px;
+}
+memberName{
+	margin:10px;
+}
+
+study_information{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+
+period,school,degree{
+	display:block;
+	width: 500px;
+    height: 30px;
+	padding-left: 80px;
+}
+period{
+	font-weight: bold;
+}
+school{
+	margin:10px;
+}
+
+
+work_information{
+	display:block;
+	border-style: dotted;
+	border-width:thin;
+	padding:10px;
+}
+
+workPeriod,company,desc{
+	display:block;
+	width: 1000px;
+    height: 30px;
+	padding-left: 80px;
+}
+workPeriod{
+    font-weight: bold;
+}
+company{
+	margin:10px;
+}
+
+hobby{
+	display:block;
+	padding-left: 80px;
+	margin:10px;
+	text-decoration:underline;
+}
+
+
+

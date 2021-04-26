@@ -8,7 +8,7 @@ import com.whut.resume.pojo.workInfo;
 import java.util.List;
 
 /**
- * @author AC <chuhan@133.cn>
+ * @author AC
  * @describe
  * @date 2021/4/25 12:08
  */

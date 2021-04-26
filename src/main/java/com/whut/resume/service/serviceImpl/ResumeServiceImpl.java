@@ -31,11 +31,12 @@ public class ResumeServiceImpl implements ResumeService {
     public void generateXML(BasicInfo basicInfo, List<FamilyInfo> familyInfo, studyInfo studyInfo, workInfo workInfo, String hobby,String image){
         try {
             Element root=domUtil.DOCUMENT.createElement("resume");
+            //图片
+            Element imageElem= domUtil.DOCUMENT.createElement("image");
+            imageElem.setTextContent(image);
+            root.appendChild(imageElem);
             //基本信息
             root.appendChild(domUtil.parseInfo(basicInfo,"basic_information"));
-            Element imageElem= domUtil.DOCUMENT.createElement("image");
-            imageElem.setTextContent("image name:"+image);
-            root.appendChild(imageElem);
             //家庭信息
             Element familyInfomation=domUtil.DOCUMENT.createElement("family_infomation");
             Integer i=0;
@@ -60,7 +61,7 @@ public class ResumeServiceImpl implements ResumeService {
             domUtil.DOCUMENT.appendChild(root);
 
             //生成文件
-            File target= new File("resume.xml");
+            File target= new File("src/main/resources/static/resume.xml");
             domUtil.generateXML(target);
         }catch(Exception e){
             e.printStackTrace();
@@ -80,7 +81,7 @@ public class ResumeServiceImpl implements ResumeService {
                 newBasicInfo.setSex("女");
             }
             domUtil.update(newBasicInfo, "basic_information");
-            File target = new File("resume.xml");
+            File target = new File("src/main/resources/static/resume.xml");
             domUtil.generateXML(target);
         }catch (Exception e){
             e.printStackTrace();
@@ -96,7 +97,7 @@ public class ResumeServiceImpl implements ResumeService {
     public void addInformation(Object object, String tagName) {
         try {
             domUtil.add(object, tagName);
-            File target = new File("resume.xml");
+            File target = new File("src/main/resources/static/resume.xml");
             domUtil.generateXML(target);
         }catch(Exception e){
             e.printStackTrace();
@@ -112,7 +113,7 @@ public class ResumeServiceImpl implements ResumeService {
     public void deleteInformation(String tobeDeleted, String tagName){
         try{
             domUtil.delete(tobeDeleted,tagName);
-            File target = new File("resume.xml");
+            File target = new File("src/main/resources/static/resume.xml");
             domUtil.generateXML(target);
         }catch (Exception e){
             e.printStackTrace();

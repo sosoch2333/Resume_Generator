@@ -12,7 +12,7 @@ basic_information{
 	border-width:thin;
 	padding:10px;
 }
-name,sex,birth,nativeAdd,address,tel,relativeTel{
+sex,birth,nativeAdd,address,tel,relativeTel{
 	display:block;
 	width: 1000px;
     height: 30px;
@@ -20,6 +20,10 @@ name,sex,birth,nativeAdd,address,tel,relativeTel{
 	text-decoration:underline;
 }
 name{
+    display:block;
+    width: 1000px;
+    height: 30px;
+    padding-left: 80px;
 	font-weight: bold;
 	font-size: 30px;
 	padding: 25px;
@@ -29,6 +33,16 @@ tel{
 	font-weight: bold;
 	margin:10px;
 }
+image{
+	display:block;
+	width: 200px;
+    height: 200px;
+	background-image: url("image.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
 
 family_infomation{
 	display:block;
@@ -59,8 +73,10 @@ period,school,degree{
     height: 30px;
 	padding-left: 80px;
 }
-school{
+period{
 	font-weight: bold;
+}
+school{
 	margin:10px;
 }
 
@@ -78,8 +94,10 @@ workPeriod,company,desc{
     height: 30px;
 	padding-left: 80px;
 }
+workPeriod{
+    font-weight: bold;
+}
 company{
-	font-weight: bold;
 	margin:10px;
 }
 

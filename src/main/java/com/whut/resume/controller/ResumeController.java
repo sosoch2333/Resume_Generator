@@ -40,6 +40,15 @@ public class ResumeController {
     }
 
     /***
+     * 显示成功界面
+     * @return
+     */
+    @RequestMapping("/success")
+    public String showSuccess(){
+        return "initSuccess";
+    }
+
+    /***
      * 显示添加界面
      * @return
      */
@@ -134,7 +143,7 @@ public class ResumeController {
     public String beforeUpdateBasicInfo(Model model){
         try {
             //获取旧resume中的信息，用于前端显示
-            domUtil.loadXML("resume.xml");
+            domUtil.loadXML("src/main/resources/static/resume.xml");
             List<Object> values=domUtil.loadObject("basic_information");
             BasicInfo oldBasicInfo=new BasicInfo();
             oldBasicInfo.setName(values.get(0).toString());
@@ -209,5 +218,20 @@ public class ResumeController {
     @RequestMapping("/showSelectContent")
     public String showSelectContent(){
         return "selectContent";
+    }
+
+    /***
+     * 挑选内容项输出页面
+     * @param contentValue
+     * @return
+     */
+    @RequestMapping("/outputSelectedContent")
+    public String outputSelectedContent(String[] contentValue){
+        try {
+            domUtil.outputSelected(contentValue);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return "initSuccess";
     }
 }

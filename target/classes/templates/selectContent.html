@@ -5,6 +5,27 @@
     <title>选择需要输出的内容</title>
     <!-- CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="/js/jquery-3.6.0.js"></script>
+    <<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-select/1.12.1/css/bootstrap-select.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    <script>
+        function getContent(){
+            console.log($('#content').val());
+            $.ajax({
+                url:"/outputSelectedContent",
+                data:{
+                    "contentValue":$('#content').val()
+                },
+                traditional:true,//传数组需要加这个
+                success:function (data) {
+                    window.location.href="/success";
+                }
+            })
+        }
+    </script>
 </head>
 <body class="bg-light">
 <div class="container">
@@ -14,23 +35,20 @@
                 <h4 class="mb-3">选择需要输出的内容</h4>
                 <form action="/deleteHobby">
                     <div class="row g-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Checked checkbox
-                            </label>
+                        <div class="col-lg-6">
+                            <select id="content" class="selectpicker show-menu-arrow form-control" multiple="multiple">
+                                <option value="basic_information">基本信息</option>
+                                <option value="family_infomation">家庭信息</option>
+                                <option value="study_information">学业信息</option>
+                                <option value="work_information">工作信息</option>
+                                <option value="hobby">爱好</option>
+                            </select>
                         </div>
                     </div>
 
                     <hr class="my-lg-4">
                     <div class="col-sm-6">
-                        <button class="btn btn-success" type="submit">删除</button>
+                        <a class="btn btn-success" onclick="getContent()">输出</a>
                     </div>
                 </form>
             </div>

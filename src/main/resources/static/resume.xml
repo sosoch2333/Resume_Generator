@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet href="resume.css" type="text/css" ?><resume>
+<?xml version="1.0" encoding="UTF-8"?><resume>
 <image>image.jpg</image>
 <basic_information>
 <name>name:褚涵</name>
@@ -20,9 +19,6 @@
 <period>period:2018-2022</period>
 <school>school:WHU</school>
 <degree>degree:本科</degree>
-<period>period:2022-2025</period>
-<school>school:UCLA</school>
-<degree>degree:硕士</degree>
 </study_information>
 <work_information>
 <workPeriod>workPeriod:2021-2021</workPeriod>
@@ -31,5 +27,4 @@
 </work_information>
 <hobby>hobby:跑步</hobby>
 <hobby>hobby:骑行</hobby>
-<hobby>hobby:唱歌</hobby>
 </resume>

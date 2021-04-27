@@ -32,7 +32,7 @@ public class domUtil {
     }
 
     /***
-     * 将object的信息解析为一个以rootName为根节点的子元素
+     * 将object的信息解析为一个以rootName为根节点的元素，根节点的子节点为object的成员变量
      * @param object
      * @param rootName
      * @return

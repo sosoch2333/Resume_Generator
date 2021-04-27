@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="resume.css" type="text/css" ?>
-<resume>
+<?xml version="1.0" encoding="UTF-8"?><resume>
 <image>image.jpg</image>
 <basic_information>
 <name>name:褚涵</name>
@@ -29,5 +27,4 @@
 </work_information>
 <hobby>hobby:跑步</hobby>
 <hobby>hobby:骑行</hobby>
-<hobby>hobby:唱歌</hobby>
 </resume>

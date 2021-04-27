@@ -5,6 +5,7 @@ import com.whut.resume.pojo.studyInfo;
 import com.whut.resume.pojo.workInfo;
 import com.whut.resume.service.ResumeService;
 import com.whut.resume.util.domUtil;
+import com.whut.resume.util.sqlUtil;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Element;
 import java.io.File;
@@ -63,6 +64,10 @@ public class ResumeServiceImpl implements ResumeService {
             //生成文件
             File target= new File("src/main/resources/static/resume.xml");
             domUtil.generateXML(target);
+            //如果生成文件成功，将用户信息写入数据库
+            sqlUtil.open();
+            sqlUtil.addInfo(basicInfo,"basic_info",null);
+            sqlUtil.close();
         }catch(Exception e){
             e.printStackTrace();
         }

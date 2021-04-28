@@ -67,6 +67,13 @@ public class ResumeServiceImpl implements ResumeService {
             //如果生成文件成功，将用户信息写入数据库
             sqlUtil.open();
             sqlUtil.addInfo(basicInfo,"basic_info",null);
+            Integer currentID=sqlUtil.getID();//获取刚刚插入的用户id
+            for(FamilyInfo info:familyInfo){
+                sqlUtil.addInfo(info,"family_information",currentID);
+            }
+            sqlUtil.addInfo(studyInfo,"study_information",currentID);
+            sqlUtil.addInfo(workInfo,"work_information",currentID);
+            sqlUtil.addInfo(hobby,"hobby",currentID);
             sqlUtil.close();
         }catch(Exception e){
             e.printStackTrace();

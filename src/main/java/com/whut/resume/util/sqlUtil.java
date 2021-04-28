@@ -3,11 +3,7 @@ package com.whut.resume.util;
 
 import org.apache.commons.lang.StringUtils;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
+import java.sql.*;
 import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
@@ -41,7 +37,7 @@ public class sqlUtil {
      * @param tableName
      * @throws IllegalAccessException
      */
-    public static boolean addInfo(Object object,String tableName,String id) throws Exception{
+    public static boolean addInfo(Object object,String tableName,Integer id) throws Exception{
         Map<String,String> attrAndValue=classUtil.getAttributesAndValue(object);
         List<String> fields=classUtil.getFields(object);
         StringJoiner stringJoiner=new StringJoiner("\",\"","\"","\"");
@@ -51,5 +47,23 @@ public class sqlUtil {
         }
         String sql="insert into "+tableName+" values ("+id+","+stringJoiner+");";
         return statement.executeUpdate(sql)<=0?false:true;
+    }
+
+    public static boolean addInfo(String object,String tableName,Integer id) throws Exception{
+        String objectStr="\""+object+"\"";
+        String sql="insert into "+tableName+" values ("+id+","+objectStr+");";
+        return statement.executeUpdate(sql)<=0?false:true;
+    }
+
+    /***
+     * 插入基本信息后查询新插入行的id
+     * @return
+     */
+    public static int getID() throws Exception{
+        String sql="SELECT LAST_INSERT_ID();";
+        statement.execute(sql);
+        ResultSet resultSet=statement.getResultSet();
+        resultSet.next();
+        return resultSet.getInt(1);
     }
 }

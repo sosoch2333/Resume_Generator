@@ -17,7 +17,7 @@ public class sqlUtil {
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String DB_URL = "jdbc:mysql://localhost:3306/resume?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     private static final String USER = "root";
-    private static final String PASS = "123456";
+    private static final String PASS = "23451";
     private static Connection connection;
     private static Statement statement;
     public static void open() throws ClassNotFoundException, SQLException {

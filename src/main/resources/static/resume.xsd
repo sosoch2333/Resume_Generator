@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="resume">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="image"/>
+				<xs:element ref="basic_information"/>
+				<xs:element ref="family_infomation"/>
+				<xs:element ref="study_information"/>
+				<xs:element ref="work_information"/>
+				<xs:element ref="hobby" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="image">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="image.jpg"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="basic_information">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element ref="sex"/>
+				<xs:element name="birth" type="xs:string"/>
+				<xs:element name="nativeAdd" type="xs:string"/>
+				<xs:element name="address" type="xs:string"/>
+				<xs:element name="tel" type="xs:string"/>
+				<xs:element name="relativeTel" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sex">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="sex:男"/>
+				<xs:enumeration value="sex:女"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:element name="family_infomation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="member" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="member">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="memberName" type="xs:string"/>
+				<xs:element name="relation" type="xs:string"/>
+			</xs:sequence>
+			<xs:attribute name="id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:byte">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="study_information">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="period" type="xs:string"/>
+				<xs:element name="school" type="xs:string"/>
+				<xs:element name="degree" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="work_information">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="workPeriod" type="xs:string" />
+				<xs:element name="company" type="xs:string"/>
+				<xs:element name="desc" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="hobby">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>
